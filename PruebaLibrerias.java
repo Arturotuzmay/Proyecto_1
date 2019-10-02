@@ -23,9 +23,22 @@ public class PruebaLibrerias {
     	a = new Punto (2,3);
     	b = new Punto (3,4);
 
-	patron = a + b;
-	suma = w - 2;
-	texto = 2 * s;	
+	suma = a + b; 
+	a = c + d; 
+    resta = w - 2;
+	multiplicacion = 2 * s;
+	division = w / s
+	
+	
+	
+	
+	a < b; 
+	a > c;
+	b <= c;
+	b >= c;	
+	a == b;
+	a != b;
+	a !  b;
     	
     	JOptionPane.showMessageDialog(null, "Punto A: " + a.toString() );
     	JOptionPane.showMessageDialog(null, "Punto B: " + b.toString() );
