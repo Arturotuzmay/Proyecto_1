@@ -1,16 +1,9 @@
-/**
- * @(#)Programa_Ejemplo.java
- *
- *
- * @author 
- * @version 1.00 2019/10/2
- */
-
-
 public class Programa_Ejemplo {
 
    
-    
+    /*este
+    es un comentario
+    multilinea */
     public static void main (String[] args) {
     	
     //Este es un programa de ejemplo
