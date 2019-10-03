@@ -8,7 +8,7 @@
 header {
     max-width: 980px;
     font-size: 1em;
-    border-radius: 20px;     /*Borde de cuadro 1*/
+    border-radius: 0px;     /*Borde de cuadro 1*/
     height: 110px;
     background-color:dodgerblue;
     color:black;
@@ -51,10 +51,10 @@ section {                       /*Texto Central*/
     margin-left: auto;
     margin-right: auto;
     font-size: 1em;
-    border-radius: 20px;
+    border-radius: 0px;
     background-color: #8CF9F4;/*Color de fondo del texto central*/
     color:darkblue;
-    max-width:980px;
+    max-width:960px;
     height:auto;
     display:inline-flexbox;
     padding:10px;        
