@@ -1,0 +1,61 @@
+#contenedor {
+    position:relative;
+    max-width: 980px;
+    margin: 0 auto;
+    /*box-shadow: 0 0 18px rgba(0, 0, 0, .4)*/
+}
+
+header {
+    max-width: 980px;
+    font-size: 1em;
+    border-radius: 20px;     /*Borde de cuadro 1*/
+    height: 110px;
+    background-color:dodgerblue;
+    color:black;
+    text-align: center;
+}
+
+header h2 {
+    text-shadow: 8px 8px 8px #FFFFFF;
+}
+figure { 
+    padding: 5px;
+     margin: 1px;
+     }
+
+header figure img#panoramica {
+    float:left;
+    /*max-width: 100px;
+    height: 100px;*/
+    width:440px;
+    border-radius: 20px 20px;
+    height:100px;
+    
+  }
+
+header figure img#logonormal {
+    float:right;
+    max-width: 100px;
+    height: 100px;
+}
+h1{
+
+    color:red;
+    text-align: center;
+}
+section {                       /*Texto Central*/
+    /*font-family: 'Playball', cursive; */
+    
+    /*text-align: center;*/
+
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    border-radius: 20px;
+    background-color: #8CF9F4;/*Color de fondo del texto central*/
+    color:darkblue;
+    max-width:980px;
+    height:auto;
+    display:inline-flexbox;
+    padding:10px;        
+}
