@@ -25,14 +25,25 @@ function modificacionGeneral(contenido){
     let newact2 = newact1.replace(/[\/][*]+.*[*][\/]/gm,"");
     let newact3 = newact2.replace(/[\/]{2,}.*/gm, ""); 
     
-    
-    //PARTE QUE ELIMINA A LOS NUMEROS BOOLEANOS Y OPERACIONES BASICAS 
-    let newact4 = newact3.replace(/.+[=]+.+[-|+|*|/]+.+/g, "Operaciones Basicas");
-    let newact5 = newact4.replace(/.+[=|<|>|!]+[=]+.+/gm, "*Boolean*");
-    let newact6 = newact5.replace(/.+[!|<|>]+.+/gm, "*Boolean*");
   
     //EN ESTE ESPACIO SE MANEJA LA ENCRIPTACION 
   
-    document.getElementById("contenido-archivo").innerHTML = newact6;
+    document.getElementById("contenido-archivo").innerHTML = newact3;
+  }
+
   
+  function boolean(contenido){
+    let newact5 = "";
+    let newact4 = "";
+    let dato = new Array();
+    let dato1 = new Array();
+    dato = text.match(/(|\()[\w.]+( |)(\={2}|\<[=]|\>[=]|\![=]|\|)( |)[\w]+(;|\))/g);
+    for (let i = 0; i < dato.length; i++) {
+        newact5 = newact5 + `${String(dato[i])} <br/>`;
+      } 
+      dato1 = text.match(/.+[=]+.+[-|+|*|/]+.+/g);
+      for (let i = 0; i < dato1.length; i++) {
+        newact4 = newact4 + `${String(dato1[i])} <br/>`;
+      } 
+      document.getElementById('boolean').innerHTML = newact5 + newact4;
   }
