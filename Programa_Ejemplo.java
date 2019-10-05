@@ -3,7 +3,7 @@ public class Programa_Ejemplo {
     public static void main (String[] args) {
     //Este es un programa de ejemplo
     //Lenguajes y Automatas	
-
+   
     /*Declaracion de Variables*/
  	int res1, res2, res3, res4;
     int x = 10;

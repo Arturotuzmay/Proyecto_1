@@ -41,9 +41,10 @@ function modificacionGeneral(contenido){
     for (let i = 0; i < dato.length; i++) {
         newact5 = newact5 + `${String(dato[i])} <br/>`;
       } 
-      dato1 = text.match(/.+[=]+.+[-|+|*|/]+.+/g);
+      dato1 = text.match(/\S.+[=]+.+[-|+|*|/]+.+/g);
       for (let i = 0; i < dato1.length; i++) {
         newact4 = newact4 + `${String(dato1[i])} <br/>`;
       } 
-      document.getElementById('boolean').innerHTML = newact5 + newact4;
+      document.getElementById('boolean').innerHTML = "Esta son las operaciones Boleanas: \n"+
+     newact5 + "\n" + "Esta son las operaciones Basicas: \n" +newact4;
   }
