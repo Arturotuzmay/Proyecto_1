@@ -20,14 +20,10 @@ function mostrarContenido(contenido) {
   
 document.getElementById('file-input').addEventListener('change', leerArchivo, false);
 
-function modificacionGeneral(contenido){
+function eliminar(contenido){
     let newact1 = text.replace(/[\/][*]+[*@(#)/.\w\s]*[*][\/]\n/gm, ""); 
     let newact2 = newact1.replace(/[\/][*]+.*[*][\/]/gm,"");
-    let newact3 = newact2.replace(/[\/]{2,}.*/gm, ""); 
-    
-  
-    //EN ESTE ESPACIO SE MANEJA LA ENCRIPTACION 
-  
+    let newact3 = newact2.replace(/[\/]{2,}.*/gm, "");
     document.getElementById("contenido-archivo").innerHTML = newact3;
   }
 
@@ -48,3 +44,25 @@ function modificacionGeneral(contenido){
       document.getElementById('boolean').innerHTML = "Esta son las operaciones Boleanas: \n"+
      newact5 + "\n" + "Esta son las operaciones Basicas: \n" +newact4;
   }
+
+
+  function encriptar(contenido){
+    let cadena = text.match(/["].*["]|['].*[']/gm);
+    let a, e, i, o, u, final;
+    var encriptado = new Array();
+    for (let x=0; x<cadena.length; x++) {
+      a = cadena[x].replace(/a/gim, "9");
+      e = a.replace(/e/gim, "0");
+      i = e.replace(/i/gim, "7");
+      o = i.replace(/o/gim, "3");
+      u = o.replace(/u/gim, "5");
+      final = u.replace(/[ ]/g, "1");
+      encriptado[x]= final;
+    }
+    let newact1 = text.replace(cadena[0], encriptado[0]);
+    let newact2 = newact1;
+    for  (let x=1; x<cadena.length; x++) {
+      newact2 = newact2.replace(cadena[x], encriptado[x]);
+    }
+    document.getElementById("contenido-archivo").innerHTML = newact2;
+}

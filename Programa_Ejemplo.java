@@ -9,6 +9,7 @@ public class Programa_Ejemplo {
     int x = 10;
     int y = 20;
     int w = 15;
+    String Mensaje = "Hola";
     
     System.out.println("\nEsta Seccion es De Numeros Booleanos\n");
     if (y<x){
@@ -33,7 +34,8 @@ public class Programa_Ejemplo {
     res2 = y - w;
     res3 = 2 * x;
     res4 = y / x;
-    
+    String Mensaje2 = "Hola Mundo";
+
     System.out.println("\n\nEsta Seccion Corresponde a Operaciones Basicas\n");
     
      System.out.println("Esta es una suma " + res1);
